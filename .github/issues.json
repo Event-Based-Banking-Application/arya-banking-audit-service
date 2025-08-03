@@ -1,0 +1,56 @@
+[
+  {
+    "service": "Audit Service",
+    "issues": [
+      {
+        "task": "Subscribe to all domain events",
+        "description": "Kafka consumer subscribing to all key domain events.",
+        "labels": [
+          "audit",
+          "kafka"
+        ]
+      },
+      {
+        "task": "Log login attempts",
+        "description": "Persist logs of successful and failed logins.",
+        "labels": [
+          "audit",
+          "security"
+        ]
+      },
+      {
+        "task": "Log password changes",
+        "description": "Audit records for password changes.",
+        "labels": [
+          "audit",
+          "security"
+        ]
+      },
+      {
+        "task": "Store as immutable records",
+        "description": "Write audit logs in write-only storage.",
+        "labels": [
+          "audit",
+          "database",
+          "security"
+        ]
+      },
+      {
+        "task": "Build REST API for viewing logs",
+        "description": "API to retrieve audit logs with filtering.",
+        "labels": [
+          "audit",
+          "api"
+        ]
+      },
+      {
+        "task": "Add TTL/indexing on old records",
+        "description": "Set database TTL or indexing policies for old audit records.",
+        "labels": [
+          "audit",
+          "database"
+        ]
+      }
+    ]
+  }
+]
